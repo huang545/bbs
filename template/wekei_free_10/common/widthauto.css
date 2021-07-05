@@ -1,0 +1,230 @@
+/* ----------------------------------
+Self-adaption Width CSS file for Discuz! X
+(C) Comsenz Inc.
+http://www.comsenz.com
+
+【未来科技】
+【www.wekei.cn】
+【https://addon.dismall.com/?@2367.developer】
+Author: Veiki
+
+Modified by Veiki
+Update Time: 2014-06-01
+Update Time: 2017-02-06
+Update Time: 2019-05-28
+Update Time: 2019-08-28
+	修改 右下角固定图标二维码 加宽后的属性
+	
+Update Time: 2019-11-27
+	修复 宽版下，导航背景颜色bug
+	
+Update Time: 2020-02-26
+	添加 带分享样式的页面宽度
+	
+---------------------------------- */
+
+
+
+
+
+
+
+
+/*********************************************************************
+
+整体框架
+
+**********************************************************************/
+/* 通用宽度 98% */
+.wp { /* 不要加这个，否则群组页面错位 min-width: 1200px !important ;*/ width:98%; }
+
+/* 对于 1366x768px屏幕 */
+/*
+.wp { width:93% ; }
+*/
+
+/* 对于 1920x1080px 或 2560x1440px屏幕 及2K、4K屏幕 */
+.wp { width:95%; }
+
+
+#hd .wp, #wp { min-width: 1200px !important ;}
+
+	.hdc { width: 98%; }
+	
+	
+	
+.ct2 { margin-right: 310/*235*/px; }
+	.ct2 .sd { margin-right: -320/*-235*/px; }
+		.ie7 .ct2 .sd { margin-left: 15px; }
+		.ie6 .ct2 .sd { padding-left: 15px; position: relative; }
+	.ct2 .mn { width: 100%; }
+
+.ct2 #chart, .ct2 #an { margin-right: -320/*-235*/px; }
+	.ie6 .ct2 #chart, .ie6 .ct2 #an { position: relative; }
+
+.ct2_a { padding-left: 150px; }
+	.ct2_a .appl { margin-left: -150px; }
+		.ie6 .ct2_a .appl { position: relative; display: inline; }
+	.ct2_a .mn { width: 98%; }
+
+/* 帮助页面 */
+#vk_help .ct2_a .mn { width:90%; /*margin-left:390px; */}	
+
+	#nv_userapp .ct2_a .mn, .ct2_a_r .mn { width: 99%; }
+
+.ct3_a { padding: 0 240px 0 160px; }
+	.ct3_a .appl { margin-left: -160px; }
+		.ie6 .ct3_a .appl, .ie6 .ct3_a .sd { display: inline; }
+	.ct3_a .sd { margin-right: -240px; }
+	.ct3_a .mn { margin: 0; width: 100%; }
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************
+
+头部，导航
+
+**********************************************************************/
+.top_head { width:100% !important; }
+
+#nv, #mu { border-left:none; border-right:none; }
+
+#nv { width:100%; background-repeat: repeat-x; /*background: none !important ;*/ border-radius: 0px; }
+
+#nv ul { width:100%; background-repeat: repeat-x; background-position: 0 0; }
+
+
+
+/*
+	同一行样式：
+	
+	Logo + nv导航 + 头像图标
+
+*/
+/*
+
+.vk_logo { display:inline-block; width:18%; float:left;  }
+#nv { display:inline-block; width:70%; }
+.vk_avt_nav { display:inline-block; width: 10%; }
+*/
+/*
+	两行样式：
+	
+	top_head 顶部========================= 头像图标 ====顶部
+	Logo + nv导航
+*/
+/*
+.vk_logo { display:inline-block; width:20%; float:left;  }
+#nv { display:inline-block; width:80%; }
+*/
+
+#mu { width:100%;  }
+
+#mu ul { background-image: none; background-color:#fff; border-bottom: 1px solid {COMMONBORDER}; }
+
+.pg_post .ct2_a { margin-left: 0; margin-right: 150px; padding-left: 0; }
+	.pg_post .ct2_a .appl { margin-left: 0; margin-right: -150px; background: none; }
+.pg_modcp .ct2_a, .pg_announcement .ct2_a { border: none; }
+	.pg_modcp .ct2_a .mn, .pg_announcement .ct2_a .mn { margin-right: 0; padding-top: 0; }
+
+.tdats .tdat { width: 20%; }
+.tdats .tfxf { width: 79.5%; }
+.tdats .tfx, .tdats .tb, .tscr { width: 39.5%; }
+	.tscr .tdat, .tscr .tdat th, .tscr .tdat td { width: 100%; }
+	
+	
+.widthauto a#switchwidth { background-position: 100% -60px; }
+.widthauto a#switchwidth:hover { background-position: 100% -90px; }
+
+
+
+
+
+
+
+
+
+/*********************************************************************
+
+DIY模块 - 论坛页面
+
+**********************************************************************/
+.vk_diy_3 {  position:relative; }
+
+/* 从前的版本 */
+/*
+.vk_diy_3_m { position:absolute; left:520px; right:220px; width: auto; }
+*/
+
+/* 现在的版本 */
+.vk_diy_3_m { position:absolute; left:520px; right:330px; width: auto; }
+
+.vk_diy_3_r {position:absolute; right:0px; }
+	.ie6 .vk_diy_3 { width:1200px !important;}
+
+
+.vk_slide_1200 { width:auto; height:100px; overflow:hidden;}
+	.vk_slide_1200 .middle { width:98%; }
+	.vk_slide_1200 .middle li:nth-child(10n){ margin:0 0px;}
+	.vk_slide_1200 .middle li:last-child { margin:0 0px;}
+
+
+	
+/*  patch 2017 相册diy */
+.vk_pic_shadow_112 { width:100%; margin:0 auto;}
+	.vk_pic_shadow_112 li:nth-child(9n) { float:left; margin:0px 7px ; }
+/*	.vk_pic_shadow_112 li:last-child { float:right !important; margin-right:0px !important; margin-left:0px !important; clear:right; }
+*/
+
+/* patch 2019 简约社交样式 帖子列表页 */
+	.ct2 .mn { width: 99%; }
+    
+    .vk_viewthread_new .vk_width { width: 99%; }
+	
+	
+
+/* patch 2019 宽版样式下，返回顶部 靠右排列 */
+.vk_scrolltop { right:0px; left: 100% !important; margin-left: auto!important;  /*position: fixed; bottom: 120px; opacity: 1; cursor: pointer; z-index: 9;*/}
+#scrolltop { right:0px; left: 100% !important; margin-left: auto!important;  /*position: fixed; bottom: 120px; opacity: 1; cursor: pointer; z-index: 9;*/}
+
+/*.top_side_post { display: none; left:0px; right: 100% !important; margin-right: auto!important;}*/
+.vk_top_side_post {  position:fixed; left: 0;  }
+
+/* 右下角固定图标 二维码 */
+.vk_fixed_div { right:0px; left: auto; margin-left: auto; }
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************
+*
+*
+*   整体外围框架 样式 
+*
+*
+**********************************************************************/
+.wp_1240 ,
+#hd ,
+#hd .wp ,
+#hd #nv { width:100%; }
+
+
+
+
+
+
