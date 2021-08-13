@@ -1,0 +1,63 @@
+.syntaxhighlighter,
+.syntaxhighlighter a,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody,
+.syntaxhighlighter table thead,
+.syntaxhighlighter table caption,
+.syntaxhighlighter textarea {
+font-size: 12px !important; /* Set the font size in pixels */
+font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important; /* Set the font type */
+}
+.syntaxhighlighter table caption {
+/* For Title(Caption) */
+font-size: 14px !important; /* Set the font size in pixels */
+font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important; /* Set the font type */
+}
+.syntaxhighlighter.nogutter td.code .line {
+/* Set the left padding space when no-gutter in ver. 3.0 */
+padding-left: 3px !important;
+}
+
+.syntaxhighlighter .lines {
+	padding: 5px 0px 5px 0px !important;
+}
+.syntaxhighlighter .line .number {
+	padding: 5px 5px 5px 0 !important;
+}
+.syntaxhighlighter .line .content {
+	padding: 5px 0px 5px 10px !important;
+}
+
+/* For gutter */
+.syntaxhighlighter table td.code {
+width:auto !important;
+}
+.syntaxhighlighter table td.gutter .line {
+padding: 0 0.5em !important;
+}
+.syntaxhighlighter .gutter {
+width: 40px !important;
+}
+
+.syntaxhighlighter table td.gutter .line {
+	padding: 5px 5px 5px 0 !important;
+}
+.syntaxhighlighter table td.code .line {
+	padding: 5px 0px 5px 10px !important;
+}
+
+.syntaxhighlighter {
+/* For Chrome/Safari(WebKit) */
+/* Hide the superfluous vertical scrollbar in ver. 3.0 */
+/*overflow-y: hidden !important;*/
+padding: 1px !important;
+}
+
+.syntaxhighlighter {
+	width: 99.7% !important;
+	overflow-y: auto;
+}

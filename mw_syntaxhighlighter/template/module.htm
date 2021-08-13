@@ -1,0 +1,26 @@
+{eval
+function mw_syntaxhighlighter_shl_codebox($brush, $gutter) {
+}
+<!--{block return}-->
+	<script type="text/javascript">
+var mw_brush = eval(<!--{eval $brush = json_encode($brush);}-->$brush);
+var mw_gutter = $gutter;
+var mw_lang_codebox = { 'select_lang': '{lang mw_syntaxhighlighter:syntaxhighlighter_select_lang}', 'show_gutter': '{lang mw_syntaxhighlighter:syntaxhighlighter_show_gutter}', 'your_code': '{lang mw_syntaxhighlighter:syntaxhighlighter_your_code}', 'close': '{lang mw_syntaxhighlighter:syntaxhighlighter_close}', 'submit': '{lang mw_syntaxhighlighter:syntaxhighlighter_submit}', 'cancle': '{lang mw_syntaxhighlighter:syntaxhighlighter_cancle}' };
+	</script>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+function mw_code_toolbar_handler($libversion) {
+}
+<!--{block return}-->
+	<script type="text/javascript">
+var mw_libversion = '$libversion';
+var mw_lang_toolbar = {'copyed': '{lang mw_syntaxhighlighter:syntaxhighlighter_copyed}'};
+	</script>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+}
