@@ -114,7 +114,7 @@
 		return str.replace(/^\s+|\s+$/g, '');
 	}
 	function mw_get_code(highlighter) {
-		if(mw_libversion == '3.0.83') {
+		if(mw_libversion == '3.0.90') {
 			var container = mw_findelement('#highlighter_' + highlighter.id, '.container');
 			var lines = container.childNodes;
 			var code = [];
