@@ -1,0 +1,288 @@
+/* ----------------------------------
+
+vk_touch.css  file for Discuz! X3 Mobile touch
+
+
+【未来科技】 
+http://www.wekei.cn
+专注 Discuz模板插件开发设计等服务。
+更多模板： https://addon.dismall.com/?@2367.developer
+客服 QQ 1508085698 1595675868
+
+Author: Veiki
+Created Time: 2020-01-10
+Update Time: 2020-01-15
+Update Time: 2020-09-26
+	添加 论坛页面幻灯模块
+
+---------------------------------- */
+html { overflow-x: hidden  !important; }
+body { background:#f8f8f8;}
+.bg { background:none; background:#f8f8f8;}
+.hdc { background:none; }
+
+
+
+/* common */
+.vk_left { float: left !important; }
+.vk_right { float: right !important; }
+.vk_margin_top_0 { margin-top: 0px !important; }
+.vk_padding_top_0 { padding-top: 0px !important; }
+.vk_color_fff { color: #fff; }
+.vk_color_fff a { color: #fff; }
+a.vk_color_fff { color: #fff !important; }
+.vk_color_fff li a { color: #fff; }
+.vk_color_333 { color: #333; }
+.vk_color_333 a { color: #333; }
+.vk_color_333 li a { color: #333; }
+.vk_border_none { border: none !important; }
+.vk_border_none li { border: none !important; }
+.vk_border_none a { border: none !important; }
+.vk_bg_none { background: none !important; }
+.vk_shadow_none { -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
+.vk_shadow_3 { -moz-box-shadow: 2px 2px 3px #999; -webkit-box-shadow: 2px 2px 3px #999; box-shadow: 2px 2px 3px #999; }
+.vk_page { position: relative; }
+
+
+/* 头部 header  - 共用属性 */
+#header { position:relative;  float:left; clear:both; width: 100%; height:44px; overflow:hidden; line-height:44px;  z-index: 99;   background:url(vk_header.png) repeat-x;  background-size: 640px 46px;   opacity:.96; filter:alpha(opacity=96);  border: none ;  margin-left: 0px; top: 0; left: 0%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
+.hdc { margin-bottom: 0px; }
+
+.header .nav { clear:both; width: 100%; height:30px; line-height:30px;}
+.nav { background: none; background-color: #fff; border-bottom: 1px solid #ccc; border-width: thin; padding: 2px 10px 8px 0; }
+
+#vk_logo { display: block; width: 200px; height: 44px; margin: 0 auto; background-color: none; background: url(logo.png) no-repeat 50% 40%; background-size: 200px 40px; }
+
+.header .left li { float: left; display: inline-block; }
+.header .right li { float: right; display: inline-block; }
+
+.header li .icon_forum { display: block; width: 38px; height: 44px;  background: url(vk_icon_forum.png) 50% 50% no-repeat; background-size: 22px 22px; }
+.header li .icon_hotthread { display: block; width: 38px; height: 44px;  background: url(vk_icon_hot.png) 50% 50% no-repeat; background-size: 22px 22px; }
+.header li .icon_userinfo { display: block; width: 38px; height: 44px;  background: url(vk_icon_user.png) 50% 50% no-repeat; background-size: 20px 20px; }
+.header li .icon_search { display: block; width: 38px; height: 44px;  background: url(vk_icon_search.png) 50% 50% no-repeat; background-size: 22px 22px; }
+
+
+/* 头部 header  - LOGO居中 */
+.vk_header_left { float: left; width: 25%; display: inline; }
+.vk_header_middle { float: left; width: 50%; display: inline; }
+.vk_header_right { float: right; width: 25%; display: inline; }
+
+
+/* 头部 header  - LOGO居左 */
+/*
+.vk_header_left { float: left; width: 50%; display: inline; }
+.vk_header_right { float: right; width: 50%; display: inline; }
+*/
+
+
+
+.threadlist { position:relative; background: #fff; }
+
+/* 热帖页面 guide */
+.threadlist h2.thread_tit { font-weight: 600; color: #333; }
+
+
+
+/* 论坛页面 forum */
+
+
+/* 上部的发帖数、会员数等统计模块 */
+.vk_forum_num { position: relative; background-color: #fff; height: 40px; line-height: 40px; text-align: center; margin-bottom: 10px; }
+.vk_forum_num li { position: relative; float: left; display: block; width: 24.7%; height: 40px; line-height: 40px; color: #bbb; font-size: 12px; text-align: center; border-right: 1px solid #f2f2f2; border-width: thin; border-bottom: 1px solid #f2f2f2; overflow: hidden;}
+.vk_forum_num li em { color: #555; }
+
+
+/* 版块单列样式 */
+/*
+.vk_forum { background: #fff; border: 1px solid #eee; border-top: 0; border-radius:0px; }
+.vk_forum li { height: 60px; border-bottom: 1px solid #eee; overflow: hidden; padding-left: 10px; }
+.vk_forum li img { float: left;  max-height: 50px; display: inline-block; margin: 5px 10px 0 0;}
+.vk_forum li:last-child { border-bottom: none; }
+.vk_forum li a { display: block; padding-left: 0px; }
+*/
+
+
+/* 版块两列样式 */
+.vk_forum { background: #fff; border-radius: none; }
+.vk_forum li { float: left; width: 50%; height: 80px; padding: 10px; border-right: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2;  font-size: 14px; color: #555; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.vk_forum li:nth-child(2n) { border-right: none; }
+
+.vk_forum li img { float: left; max-height: 50px; display: inline-block; margin: 5px 10px 0 0; }
+.vk_forum li a { display: block; }
+.vk_forum_title { height: 18px; line-height: 20px; overflow: hidden; font-size: 16px; color: #111; font-weight: 500; padding: 0; margin: 6px 0 0 0; letter-spacing: 0px; }
+.vk_forum_time span { height: 12px; line-height: 12px; overflow: hidden; font-size: 10px; color: #aaa; padding: 0; letter-spacing: 0px; }
+.vk_forum_span { height: 12px; line-height: 12px; overflow: hidden; font-size: 10px; color: #aaa; padding: 0; letter-spacing: 0px; white-space: nowrap; text-overflow: ellipsis; }
+
+
+/* 版块图标 - 单列、两列通用*/
+.vk_pic_hd { }
+.vk_pic_hd img { max-width: 60px; max-height: 60px; margin: 3px 0; }
+.vk_forum_name { height: 26px; line-height: 26px; overflow: hidden; }
+.vk_forum_time { height: 26px; line-height: 26px; overflow: hidden; }
+.vk_forum_time span { height: 12px; line-height: 12px; overflow: hidden; font-size: 10px; color: #aaa; padding: 0; letter-spacing: 0px; }
+.vk_forum_name span.num { height: 12px; line-height: 12px; overflow: hidden; font-size: 10px; color: #aaa; padding: 0; letter-spacing: 0px; }
+
+
+
+
+
+/* 版块三列样式 */
+/*
+*/
+
+
+
+
+
+
+
+
+
+
+.wp {}
+.wm { margin:0 10px; }
+.bm { margin-bottom: 10px; }
+.bm_c { padding: 0 10px; border-radius: 0px /*0px 5px 5px*/; }
+
+.bm_h .o { float: right; width: 50px; }
+.bm_h .o img { float: right; cursor: pointer; padding:5px 5px 0 0;  }
+.bm_h .i { padding-left: 10px; }
+.bm_h .pn { margin-top: 4px; }
+.bm_h { height: 36px; background:#fff; background-size: 100% 36px;  line-height: 36px; white-space: nowrap; overflow: hidden;  border-radius: /*5px  5px 0 */ 0px ; border:1px solid #eee; }
+.bm_h h2 { height: 36px; background:#fff ; border-radius:/* 5px  5px 0*/ 0px ; }
+.bm_h:hover { }
+.bm_h h2 a { display:block; margin:0 31px 0 10px; padding-left:0px; font-size:14px; line-height:36px; font-weight:600; color:#555; }
+
+.sub_forum li a { font-size:14px; line-height:36px; font-weight:400; color:#555; }
+.sub_forum {  border-radius:3px;}
+.sub_forum li .num { float: right; background: #fff; border: 1px solid #ddd; border-width: thin; color: #1ad; font-weight: 200;  font-size: 10px; height: 14px; line-height: 14px; margin-top: 8px; padding: 0 10px; border-radius: 10px;}
+
+
+
+
+/* 列表页面 */
+.nav .icon_edit a { display: block; width: 32px; height: 32px; margin-right: 10px; background: url(icon_edit.png) 50% 50% no-repeat; background-size: 26px 26px; line-height: 2000px; overflow: hidden; }
+.threadlist .num { background: url(icon_reply.png) 0% 50% no-repeat; background-size: 12px 12px; }
+
+
+/*.threadlist li a { text-indent: 25px; }
+.threadlist li a span { text-indent: 0px; }
+*/
+.hotlist .icon_top ,
+.hotlist .icon_tu ,
+.threadlist .icon_top ,
+.threadlist .icon_tu { position: relative; display: inline-block; float: left; margin: 0 5px 0 0; width: 20px; height: 20px; top: 2px; border-radius: 2px; overflow: hidden; }
+
+
+/* 帖子页面 */
+.postlist {}
+.postlist h2 { background: #fff; margin: 0px; padding:5px 10px 0 10px; }
+.postlist { background: #fff; }
+.postlist .plc { background: #fff; }
+
+.plc .avatar img { border:none; padding: 0px; border-radius: 100%; }
+
+
+.plc .pi .message .quote { background: #f6f6f6; border-radius: 5px; }
+
+.postalbum { position: absolute; top: 42px !important; }
+
+
+
+/* 发帖页面 */
+.post_from { background: #fff; }
+.post_from .px { width: 94%; background: none; padding: 10px; margin: 10px 0; }
+.btn_pn { margin-right: 10px; }
+
+
+
+/* 我的页面 */
+.user_avatar img { border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); width: 60px; height: 60px; }
+
+.myinfo_list { width: 316px; margin: 0 auto; }
+.myinfo_list li { float: left; margin: 0 5px 10px 5px; width: 145px; height: 70px;  background: none; background-color: #fff; border: 1px solid #ddd; border-radius: 3px;}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+*
+*
+*    添加的模块
+*
+*
+*****************************************************************/
+
+
+.m_t_100 { margin-top: 100px; }
+.p_t_100 { padding-top: 100px; }
+
+.bg_icon { width: 100%; height: auto; background: url(a_d_1.jpg) center no-repeat; background-size: cover; }
+
+
+
+
+
+
+
+/* 搜索框 */
+.vk_index_search table { width: 90%; margin: auto; background: #fff; border: 1px solid #eee;  border-radius: 50px; overflow: hidden; }
+.vk_index_search .input { width: 100%; height: 30px; text-indent: 7px; margin-top: 0px; border:none ; }
+.vk_index_search .vk_search_btn_inner { width: 50px; height: 38px; color: #fff; background: url(icon_search_inner.png) 96% 50%  no-repeat; background-size: 30px 30px; margin:0px; border: 0; font-size: 12px; }
+
+
+
+
+
+/*
+[未来科技_手机]版块-上图标-下标题-5列
+*/
+.vk_diy_forum_icon { position: relative; padding:10px 0; width:100%; overflow:hidden; }
+.vk_diy_forum_icon_5 li { float:left; width: 19.925%; /*height: 80px;*/ margin:5px 0; display:table-cell; vertical-align:middle; text-align:center;}
+.vk_diy_forum_icon_5 li:nth-child(5n) { width: 19.925%; margin-right: 0px; }
+
+.vk_diy_forum_icon .forum_icon_1 { display: block; height: 60px; background: url(forum_icon_1.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_2 { display: block; height: 60px; background: url(forum_icon_2.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_3 { display: block; height: 60px; background: url(forum_icon_3.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_4 { display: block; height: 60px; background: url(forum_icon_4.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_5 { display: block; height: 60px; background: url(forum_icon_5.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_6 { display: block; height: 60px; background: url(forum_icon_6.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_7 { display: block; height: 60px; background: url(forum_icon_7.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_8 { display: block; height: 60px; background: url(forum_icon_8.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_9 { display: block; height: 60px; background: url(forum_icon_9.png) center no-repeat; background-size: 44px 44px; }
+.vk_diy_forum_icon .forum_icon_10 { display: block; height: 60px; background: url(forum_icon_10.png) center no-repeat; background-size: 44px 44px; }
+
+.vk_diy_forum_icon li a { display: inline-block; width: 92%; color:#333; font-size:12px; }
+.vk_diy_forum_icon li p { margin:0 auto; max-width:98%; height:24px; line-height:30px; overflow:hidden; text-align:center; color:#333; font-size:12px; }
+
+
+
+
+
+/*****************************************************************
+*
+*
+*    颜色修改
+*
+*
+*****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+

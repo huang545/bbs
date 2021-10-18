@@ -1,0 +1,124 @@
+<!--{if $_G['setting']['mobile']['mobilehotthread'] && $_GET['forumlist'] != 1}-->
+	<!--{eval dheader('Location:forum.php?mod=guide&view=new');exit;}-->
+<!--{/if}-->
+<!--{template common/header}-->
+
+<script type="text/javascript">
+	function getvisitclienthref() {
+		var visitclienthref = '';
+		if(ios) {
+			visitclienthref = 'https://itunes.apple.com/cn/app/zhang-shang-lun-tan/id489399408?mt=8';
+		} else if(andriod) {
+			visitclienthref = 'http://www.discuz.net/mobile.php?platform=android';
+		}
+		return visitclienthref;
+	}
+</script>
+
+<!--{if $_GET['visitclient']}-->
+<!--{else}-->
+
+<!-- header start -->
+<!--{if $showvisitclient}-->
+<!--{/if}-->
+
+<!-- header end -->
+<!--{hook/index_top_mobile}-->
+
+
+
+
+
+<!-- main forumlist start -->
+
+
+<!-- 版块模块 -->
+<!--
+[未来科技_手机]版块-上图标-下标题-5列
+-->
+<div class="vk_wp m_t_0">
+	<div class="vk_diy_forum_icon vk_diy_forum_icon_5 cl">
+	<span class="icon_hot"></span>
+		<ul> 
+			<li> <a href="#" class=" "> <div class="forum_icon_1"></div> <p> 美食/美味 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_2"></div> <p> 酒店/民宿 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_3"></div> <p> 外卖/小吃 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_4"></div> <p> 休闲/娱乐 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_5"></div> <p> 交友/恋爱 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_6"></div> <p> 教育/培训 </p>  </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_7"></div> <p> 电影/门票 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_8"></div> <p> 打车/导航 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_9"></div> <p> 购物/逛街 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_10"></div> <p> 母婴/护理 </p> </a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!-- 图片模块 -->
+<div class="cl">
+    <a href="#" class="cl"><img width="100%" src="$_G['style']['styleimgdir']/a_d_2.jpg"></a>
+</div>
+
+
+
+<!-- 统计模块 -->
+
+
+<div class="wp" id="wp">
+
+
+	<!--{loop $catlist $key $cat}-->
+	<div class="bm bmw fl">
+		<div class="subforumshow bm_h cl" href="#sub_forum_$cat[fid]">
+			<span class="o"><img  width="50" height="26"  src="$_G['style']['styleimgdir']/collapsed_<!--{if !$_G[setting][mobile][mobileforumview]}-->yes<!--{else}-->no<!--{/if}-->.png"/></span>
+		<h2><a href="javascript:;">$cat[name]</a></h2>
+		</div>
+		<div id="sub_forum_$cat[fid]" class="vk_forum ">
+			<ul class="cl">
+				<!--{loop $cat[forums] $forumid}-->
+				<!--{eval $forum=$forumlist[$forumid];}-->
+				<li class="vk_bg_none vk_pic_hd">
+					  <!--{if $forum[icon]}--> 
+					  $forum[icon] 
+					  <!--{else}--> 
+					  <a href="forum.php?mod=forumdisplay&fid={$forum['fid']}">
+					  <img src="$_G['style']['styleimgdir']/forum.png" /> 
+					  </a>
+					  <!--{/if}--> 
+					  <p class="vk_forum_name"><a href="forum.php?mod=forumdisplay&fid={$forum['fid']}"><!--{if $forum[todayposts] > 0}--><!--<span class="num">$forum[todayposts]</span>--><!--{/if}-->{$forum[name]}</a></p>
+                      <p class="vk_forum_time"><span >{lang index_threads} {$forum[threads]} &nbsp; {lang thread} {$forum[posts]} </span> 							
+				
+				</li>
+				<!--{/loop}-->
+			</ul>
+		</div>
+	</div>
+	<!--{/loop}-->
+</div>
+<!-- main forumlist end -->
+<!--{hook/index_middle_mobile}-->
+<script type="text/javascript">
+	(function() {
+		<!--{if !$_G[setting][mobile][mobileforumview]}-->
+			$('.sub_forum').css('display', 'block');
+		<!--{else}-->
+			$('.sub_forum').css('display', 'none');
+		<!--{/if}-->
+		$('.subforumshow').on('click', function() {
+			var obj = $(this);
+			var subobj = $(obj.attr('href'));
+			if(subobj.css('display') == 'none') {
+				subobj.css('display', 'block');
+				obj.find('img').attr('src', '$_G['style']['styleimgdir']/collapsed_yes.png');
+			} else {
+				subobj.css('display', 'none');
+				obj.find('img').attr('src', '$_G['style']['styleimgdir']/collapsed_no.png');
+			}
+		});
+	 })();
+</script>
+
+<!--{/if}-->
+<!--{template common/footer}-->

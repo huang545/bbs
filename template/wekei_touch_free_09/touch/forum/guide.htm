@@ -1,0 +1,50 @@
+<!--{template common/header}-->
+
+
+
+<!-- 版块模块 -->
+<!--
+[未来科技_手机]版块-上图标-下标题-5列
+-->
+<div class="vk_wp m_t_0">
+	<div class="vk_diy_forum_icon vk_diy_forum_icon_5 cl">
+	<span class="icon_hot"></span>
+		<ul> 
+			<li> <a href="#" class=" "> <div class="forum_icon_1"></div> <p> 美食/美味 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_2"></div> <p> 酒店/民宿 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_3"></div> <p> 外卖/小吃 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_4"></div> <p> 休闲/娱乐 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_5"></div> <p> 交友/恋爱 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_6"></div> <p> 教育/培训 </p>  </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_7"></div> <p> 电影/门票 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_8"></div> <p> 打车/导航 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_9"></div> <p> 购物/逛街 </p> </a></li>
+			<li> <a href="#" class=" "> <div class="forum_icon_10"></div> <p> 母婴/护理 </p> </a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!-- 图片模块 -->
+<div class="cl">
+    <a href="#" class="cl"><img width="100%" src="$_G['style']['styleimgdir']/a_d_2.jpg"></a>
+</div>
+
+
+
+<!-- main threadlist start -->
+<div class="threadlist">
+	<h2 class="thread_tit">{lang guide_newthread}</h2>
+
+	<!--{loop $data $key $list}-->
+		<!--{subtemplate forum/guide_list_row}-->
+	<!--{/loop}-->
+
+</div>
+<!-- main threadlist end -->
+
+$multipage
+
+<div class="pullrefresh" style="display:none;"></div>
+<!--{template common/footer}-->
